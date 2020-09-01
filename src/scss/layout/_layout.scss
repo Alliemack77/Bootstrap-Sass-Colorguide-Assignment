@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em; // not supported on safari
+    width: 75%;
+    margin: 2.5rem auto;
+    
+
+    & > * {
+        flex-basis: 20%;
+        min-width: 20em;
+    }
+}
+
+.single {
+    display: flex;
+    flex-direction: column;
+    @include textcolor;
+    @include border(#909090);
+    @include border-radius;
+
+    & .top {
+        padding: 10rem;
+    }
+
+    & .title {
+        margin-top: .75rem;
+    }
+
+    & .title, .description {
+        margin-left: 1rem;
+    }
+}
+
+.triple {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+
+    & > * {
+        padding: 3.35rem;
+        flex-grow: 1; //without this does not take up 100% of the containing div b/c flex-basis is 20%...will grow to fill the width of the container. Here width is the "main dimension" because flex-direction is set to row 
+    }
+
+}
+
+.section-title {
+    margin-top: 1.5rem;
+    font-size: 4.5rem;
+}
+
+
