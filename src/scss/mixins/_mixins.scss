@@ -25,12 +25,12 @@
 @mixin bg-color ($color) {
     background-color: ($color);
 
-        .color-dark {
-            background-color: darken($color, $amount);
-        }
+    .color-dark {
+        background-color: darken($color, $amount);
+    }
 
-        .color-light {
-            background-color: lighten($color, $amount);
-        }
+    .color-light {
+        background-color: lighten($color, $amount);
+    }
     
 }

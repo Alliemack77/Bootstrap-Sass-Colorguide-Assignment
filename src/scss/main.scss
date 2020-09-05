@@ -1,16 +1,16 @@
-@import "../fonts/fonts";
+@import "../fonts/fonts"; //establish fonts 
 
-@import "variables/variables";
+@import "variables/variables"; // establishes custom variables
 
 
 //Bootstrap link
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"; //set those variables in bs
 
 
-@import "mixins/mixins";
+@import "mixins/mixins"; //define mixins
 
 
-@import "layout/layout";
+@import "layout/layout"; //apply mixins, layout and custom styles
 
 
 
