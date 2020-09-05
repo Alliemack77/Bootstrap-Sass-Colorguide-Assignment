@@ -6,13 +6,13 @@
 
 
 .split {
-    display: flex;
+    @include flex (row);
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5em; // not supported on safari
     width: 75%;
     margin: 2.5rem auto;
-    
+
 
     & > * {
         flex-basis: 20%;
@@ -21,8 +21,7 @@
 }
 
 .single {
-    display: flex;
-    flex-direction: column;
+    @include flex (column);
     @include textcolor;
     @include border(#909090);
     @include border-radius;
@@ -41,15 +40,29 @@
 }
 
 .triple {
-    display: flex;
-    flex-direction: row;
+    @include flex (row);
     height: 25rem;
 
     & > * {
         padding: 3.35rem;
-        flex-grow: 1; //without this does not take up 100% of the containing div b/c flex-basis is 20%...will grow to fill the width of the container. Here width is the "main dimension" because flex-direction is set to row 
+        flex-grow: 1; //without this does not take up 100% of the containing div b/c flex-basis is 20%...will grow to fill the width of the container. Here width is the "main dimension" because flex-direction is set to row
     }
+}
 
+.bg-yellow {
+    @include bg-color ($yellow);
+}
+
+.bg-pink {
+    @include bg-color ($pink);
+}
+
+.bg-blue {
+    @include bg-color ($blue);
+}
+
+.bg-purple {
+    @include bg-color ($purple);
 }
 
 .section-title {

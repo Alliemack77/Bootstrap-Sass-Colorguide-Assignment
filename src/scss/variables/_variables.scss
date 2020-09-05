@@ -1,15 +1,25 @@
 //Custom theme colors
-$theme-colors: (
-    "yellow": #ffc83f,
-    "yellow-darker": darken(#ffc83f, 10%),
-    "yellow-lighter": lighten(#ffc83f, 10%),
-    "pink": #fa5e5b,
-    "pink-darker": darken(#fa5e5b, 10%),
-    "pink-lighter": lighten(#fa5e5b, 10%),
-    "blue": #1d508d,
-    "blue-darker": darken(#1d508d, 10%),
-    "blue-lighter": lighten(#1d508d, 10%),
-    "purple": #684e79,
-    "purple-darker": darken(#684e79, 10%),
-    "purple-lighter": lighten(#684e79, 10%)
-);
+// $theme-colors: (
+//     "yellow": #ffc83f,
+//     "yellow-darker": darken(#ffc83f, 10%),
+//     "yellow-lighter": lighten(#ffc83f, 10%),
+//     "pink": #fa5e5b,
+//     "pink-darker": darken(#fa5e5b, 10%),
+//     "pink-lighter": lighten(#fa5e5b, 10%),
+//     "blue": #1d508d,
+//     "blue-darker": darken(#1d508d, 10%),
+//     "blue-lighter": lighten(#1d508d, 10%),
+//     "purple": #684e79,
+//     "purple-darker": darken(#684e79, 10%),
+//     "purple-lighter": lighten(#684e79, 10%)
+// );
+
+
+//Custom Colors 
+$yellow: #ffc83f;
+$pink: #fa5e5b;
+$blue: #1d508d;
+$purple:#684e79; 
+
+$amount: 10%;
+
